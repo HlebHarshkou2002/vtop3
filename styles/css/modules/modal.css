@@ -84,6 +84,16 @@
     background: transparent;
 }
 
+.field input.error {
+    border-bottom: 1px solid red;
+}
+
+.password-error-modal {
+    display: none;
+    font-size: 8px;
+    color: red;
+}
+
 .nationality-field select {
     box-sizing: border-box;
     width: 100%;

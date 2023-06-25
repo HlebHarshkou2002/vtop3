@@ -39,18 +39,18 @@
                     <form action="" class="main-form">
                         <div class="field">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name">
+                            <input type="text" name="first-name" class="js-input">
                         </div>
 
                         <div class="field">
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name">
+                            <input type="text" name="last-name" class="js-input">
                         </div>
 
                         <div class="field nationality-field">
                             <label for="nationality">Nationality</label>
 
-                            <select name="nationality" id="nationality-select">
+                            <select name="nationality" id="nationality-select" class="js-input">
                                 <option value="">Choose an nationality</option>
                                 <option value="American">American</option>
                                 <option value="Russian">Russian</option>
@@ -59,23 +59,23 @@
 
                         <div class="field">
                             <label for="e-mail">E-mail</label>
-                            <input type="email" name="e-mail">
+                            <input type="email" name="e-mail" class="js-input js-input-email">
                         </div>
 
                         <div class="field">
                             <label for="date-of-birth">Date of Birth</label>
-                            <input type="date" name="date-of-birth">
+                            <input type="date" name="date-of-birth" class="js-input">
                         </div>
 
 
                         <div class="gender-field">
                             <span>Gender</span>
                             <div class="gender-options">
-                                <input type="radio" name="gender" value="male" class="radio">
-                                <label for="gender" class="option">Male</label>
+                                <input type="radio" name="gender" id="male" value="male" class="radio" class="js-input" checked>
+                                <label for="male" class="option">Male</label>
 
-                                <input type="radio" name="gender" value="female" class="radio">
-                                <label for="gender" class="option">Female</label>
+                                <input type="radio" name="gender" id="female" value="female" class="radio" class="js-input">
+                                <label for="female" class="option">Female</label>
                             </div>
                         </div>
 
@@ -83,13 +83,17 @@
 
                         <div class="field">
                             <label for="password">Password</label>
-                            <input type="password" name="password">
+                            <input type="password" name="password" class="js-input js-input-password">
+                            <div class="password-error-modal">
+                                The password must have at least one uppercase and one lowercase letter and number.
+                                Length must be greater than 8 symbols
+                            </div>
                         </div>
 
 
                         <div class="field">
                             <label for="confirm-password">Confirm password</label>
-                            <input type="password" name="confirm-password">
+                            <input type="password" name="confirm-password" class="js-input js-input-confirm-password">
                         </div>
 
 
@@ -123,6 +127,7 @@
     <!-- Подключаем файлы со скриптами -->
     <script src="./scripts/main.js"></script>
     <script src="./scripts/animations/svg-vivus.js"></script>
+    <script src="./scripts/validators/main-form-validator.js"></script>
 </body>
 
 </html>
