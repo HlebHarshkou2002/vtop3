@@ -83,6 +83,7 @@
     }
 
     .user-img {
+        position: relative !important;
         height: 100%;
         width: 100%;
     }
