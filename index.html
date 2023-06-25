@@ -11,7 +11,9 @@
     <!-- Подключение шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Work+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
 
 
     <title>login-signup-test</title>
@@ -47,7 +49,7 @@
 
                         <div class="field nationality-field">
                             <label for="nationality">Nationality</label>
-                            
+
                             <select name="nationality" id="nationality-select">
                                 <option value="">Choose an nationality</option>
                                 <option value="American">American</option>
@@ -71,7 +73,7 @@
                             <div class="gender-options">
                                 <input type="radio" name="gender" value="male" class="radio">
                                 <label for="gender" class="option">Male</label>
-    
+
                                 <input type="radio" name="gender" value="female" class="radio">
                                 <label for="gender" class="option">Female</label>
                             </div>
@@ -98,18 +100,29 @@
                         <div class="signup-wrapper">
                             <button type="submit" class="submit-button">Complete Signup</button>
                         </div>
-   
+
                     </form>
-            
+
                 </div>
 
                 <div class="user-img--wrapper">
-                    <img src="./styles/images/UserPhoto.svg" class="user-img" alt="user photo">
+                    <object id="UserPhoto" type="image/svg+xml" data="./styles/images/UserPhoto.svg" class="user-img"></object>
+                    <!-- <img src="./styles/images/UserPhoto.svg" class="user-img" alt="user photo"> -->
                 </div>
-                
+
             </section>
         </section>
     </main>
+
+
+    <!-- Подключаем Vivus -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Подключаем файлы со скриптами -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/animations/svg-vivus.js"></script>
 </body>
 
 </html>

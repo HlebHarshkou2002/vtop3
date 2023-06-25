@@ -1,0 +1,52 @@
+/* Общие стили */
+
+body {
+    background-color: #F4F5FC;
+    height: 100%;
+}
+
+.app-wrapper {
+    position: relative;
+    background-color: #F4F5FC;
+    height: 100vh;
+}
+
+.modal-wrapper {
+    display: flex;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color: #FFFFFF;
+    height: 481px;
+    width: 665px;
+}
+
+.content {
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 485px;
+
+    margin: 0 auto;
+    /* left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+
+    font-family: 'Work Sans', sans-serif;
+    color: #111111;
+}
