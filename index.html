@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="./styles/css/main.css">
+
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+
+    <title>login-signup-test</title>
+</head>
+
+<body>
+    <main class="app-wrapper">
+        <section class="modal-wrapper">
+            <aside class="sidebar">
+                <div>
+                    <h1>Sign up</h1>
+                </div>
+            </aside>
+
+            <section class="content">
+                <div class="content-wrapper">
+
+                    <div class="title-wrapper">
+                        <h1 class="title">New user?</h1>
+                        <p class="suptitle">Use the form below to create your account.</p>
+                    </div>
+
+                    <form action="" class="main-form">
+                        <div class="field">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name">
+                        </div>
+
+                        <div class="field">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name">
+                        </div>
+
+                        <div class="field nationality-field">
+                            <label for="nationality">Nationality</label>
+                            
+                            <select name="nationality" id="nationality-select">
+                                <option value="">Choose an nationality</option>
+                                <option value="American">American</option>
+                                <option value="Russian">Russian</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="e-mail">E-mail</label>
+                            <input type="email" name="e-mail">
+                        </div>
+
+                        <div class="field">
+                            <label for="date-of-birth">Date of Birth</label>
+                            <input type="date" name="date-of-birth">
+                        </div>
+
+
+                        <div class="gender-field">
+                            <span>Gender</span>
+                            <div class="gender-options">
+                                <input type="radio" name="gender" value="male" class="radio">
+                                <label for="gender" class="option">Male</label>
+    
+                                <input type="radio" name="gender" value="female" class="radio">
+                                <label for="gender" class="option">Female</label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input type="password" name="password">
+                        </div>
+
+
+                        <div class="field">
+                            <label for="confirm-password">Confirm password</label>
+                            <input type="password" name="confirm-password">
+                        </div>
+
+
+                        <div class="signup-wrapper">
+                            <span class="login">Have an account? <a href="#">Login</a></span>
+                        </div>
+
+                        <div class="signup-wrapper">
+                            <button type="submit" class="submit-button">Complete Signup</button>
+                        </div>
+   
+                    </form>
+            
+                </div>
+
+                <div class="user-img--wrapper">
+                    <img src="./styles/images/UserPhoto.svg" class="user-img" alt="user photo">
+                </div>
+                
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
