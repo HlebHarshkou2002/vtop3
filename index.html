@@ -37,17 +37,17 @@
                     </div>
 
                     <form action="" class="main-form">
-                        <div class="field">
+                        <div class="field field-animation">
                             <label for="first-name">First Name</label>
                             <input type="text" name="first-name" class="js-input">
                         </div>
 
-                        <div class="field">
+                        <div class="field field-animation">
                             <label for="last-name">Last Name</label>
                             <input type="text" name="last-name" class="js-input">
                         </div>
 
-                        <div class="field nationality-field">
+                        <div class="field nationality-field field-animation">
                             <label for="nationality">Nationality</label>
 
                             <select name="nationality" id="nationality-select" class="js-input">
@@ -56,18 +56,18 @@
                             </select>
                         </div>
 
-                        <div class="field">
+                        <div class="field field-animation">
                             <label for="e-mail">E-mail</label>
                             <input type="email" name="e-mail" class="js-input js-input-email">
                         </div>
 
-                        <div class="field">
+                        <div class="field field-animation">
                             <label for="date-of-birth">Date of Birth</label>
                             <input type="date" name="date-of-birth" class="js-input">
                         </div>
 
 
-                        <div class="gender-field">
+                        <div class="gender-field field-animation">
                             <span>Gender</span>
                             <div class="gender-options">
                                 <input type="radio" name="gender" id="male" value="male" class="radio" class="js-input" checked>
@@ -80,7 +80,7 @@
 
 
 
-                        <div class="field">
+                        <div class="field field-animation">
                             <label for="password">Password</label>
                             <input type="password" name="password" class="js-input js-input-password">
                             <div class="password-error-modal">
@@ -90,7 +90,7 @@
                         </div>
 
 
-                        <div class="field">
+                        <div class="field field-animation">
                             <label for="confirm-password">Confirm password</label>
                             <input type="password" name="confirm-password" class="js-input js-input-confirm-password">
                         </div>
@@ -125,7 +125,12 @@
     
     <!-- Подключаем файлы со скриптами -->
     <script src="./scripts/main.js"></script>
+
+		<!-- Анимации -->
     <script src="./scripts/animations/svg-vivus.js"></script>
+    <script src="./scripts/animations/fields-animation.js"></script>
+
+		<!-- Валидации -->
     <script src="./scripts/validators/main-form-validator.js"></script>
 </body>
 

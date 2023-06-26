@@ -33,7 +33,7 @@ function accessSubmit() {
 		input.value = "";
 	});
 	setTimeout(() => {
-		alert("Регистрация прошла успешно");
+		window.location.href = 'server-ok.html';
 	}, 500);
 }
 
@@ -57,7 +57,7 @@ form.onsubmit = function () {
 	if (emptyInputs.length !== 0) {
 		// alert("Inputs not filled")
 		animateErrorSubmit();
-		// return false;
+		return false;
 	}
 
 	//Валидация пароля
@@ -67,7 +67,6 @@ form.onsubmit = function () {
 		animateErrorSubmit();
 		return false;
 	} else {
-		console.log(passwordVal);
 		if (!validatePassword(passwordVal)) {
 			inputPassword.classList.add("error");
 			showPasswordErrorModals();

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <link rel="stylesheet" href="./styles/css/modules/access-modal.css">
+
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Work+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+
+
+    <title>login-signup-test</title>
+</head>
+
+<body>
+    <main class="app-wrapper">
+        <section class="modal-wrapper">
+            <aside class="sidebar">
+                <div>
+                    <h1>Sign up</h1>
+                </div>
+            </aside>
+
+            <section class="content">
+                <div class="content-wrapper">
+
+                    	<div class="title-wrapper">
+                        <h1 class="title">Thank you!</h1>
+                        <p class="suptitle">You registered!</p>
+                    	</div>
+
+											<div class="signup-wrapper">
+												<span class="login">Have an account? <a href="index.html">Login</a></span>
+											</div>
+                    
+                    </form>
+
+                </div>
+
+                <div class="user-img--wrapper">
+                    <object id="UserPhoto" type="image/svg+xml" data="./styles/images/UserPhoto.svg" class="user-img"></object>
+                    <!-- <img src="./styles/images/UserPhoto.svg" class="user-img" alt="user photo"> -->
+                </div>
+
+            </section>
+        </section>
+    </main>
+
+
+    <!-- Подключаем Vivus -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Подключаем файлы со скриптами -->
+    <script src="./scripts/main.js"></script>
+
+		<!-- Анимации -->
+    <script src="./scripts/animations/svg-vivus.js"></script>
+    <script src="./scripts/animations/fields-animation.js"></script>
+
+		<!-- Валидации -->
+    <script src="./scripts/validators/main-form-validator.js"></script>
+</body>
+
+</html>
