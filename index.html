@@ -36,19 +36,19 @@
                         <p class="suptitle">Use the form below to create your account.</p>
                     </div>
 
-                    <form action="" class="main-form">
+                    <form class="main-form">
                         <div class="field field-animation">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" class="js-input">
+                            <input type="text" name="first-name" class="js-input" id="first-name">
                         </div>
 
                         <div class="field field-animation">
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" class="js-input">
+                            <input type="text" name="last-name" class="js-input" id="last-name">
                         </div>
 
                         <div class="field nationality-field field-animation">
-                            <label for="nationality">Nationality</label>
+                            <label for="nationality-select">Nationality</label>
 
                             <select name="nationality" id="nationality-select" class="js-input">
                                 <option value="American">American</option>
@@ -58,22 +58,22 @@
 
                         <div class="field field-animation">
                             <label for="e-mail">E-mail</label>
-                            <input type="email" name="e-mail" class="js-input js-input-email">
+                            <input type="email" name="e-mail" class="js-input js-input-email" id="e-mail">
                         </div>
 
                         <div class="field field-animation">
                             <label for="date-of-birth">Date of Birth</label>
-                            <input type="date" name="date-of-birth" class="js-input">
+                            <input type="date" name="date-of-birth" class="js-input" id="date-of-birth">
                         </div>
 
 
                         <div class="gender-field field-animation">
                             <span>Gender</span>
                             <div class="gender-options">
-                                <input type="radio" name="gender" id="male" value="male" class="radio" class="js-input" checked>
+                                <input type="radio" name="gender" id="male" value="male" class="radio js-input" checked>
                                 <label for="male" class="option">Male</label>
 
-                                <input type="radio" name="gender" id="female" value="female" class="radio" class="js-input">
+                                <input type="radio" name="gender" id="female" value="female" class="radio js-input">
                                 <label for="female" class="option">Female</label>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
 
                         <div class="field field-animation">
                             <label for="password">Password</label>
-                            <input type="password" name="password" class="js-input js-input-password">
+                            <input type="password" name="password" class="js-input js-input-password" id="password">
                             <div class="password-error-modal">
                                 The password must have at least one uppercase and one lowercase letter and number.
                                 Length must be greater than 8 symbols
@@ -92,7 +92,7 @@
 
                         <div class="field field-animation">
                             <label for="confirm-password">Confirm password</label>
-                            <input type="password" name="confirm-password" class="js-input js-input-confirm-password">
+                            <input type="password" name="confirm-password" class="js-input js-input-confirm-password" id="confirm-password">
                         </div>
 
 

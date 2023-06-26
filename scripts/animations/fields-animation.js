@@ -8,7 +8,4 @@ if(fields.length > 0) {
 			fields[i].classList.add('active-animation');
 		}, i * 1000)
 	}
-	// fields.forEach((field) => {
-	// 	field.classList.add('active-animation');
-	// })
 }

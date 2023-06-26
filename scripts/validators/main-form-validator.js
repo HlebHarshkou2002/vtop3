@@ -55,13 +55,14 @@ form.onsubmit = function () {
 
 	//Проверка на то есть ли пустые инпуты
 	if (emptyInputs.length !== 0) {
-		// alert("Inputs not filled")
 		animateErrorSubmit();
 		return false;
 	}
 
+	debugger;
 	//Валидация пароля
 	if (passwordVal.length < 8) {
+		debugger
 		inputPassword.classList.add("error");
 		showPasswordErrorModals();
 		animateErrorSubmit();
