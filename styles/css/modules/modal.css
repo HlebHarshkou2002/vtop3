@@ -172,6 +172,20 @@
     cursor: pointer;
 }
 
+.animate-error-submit {
+	animation-duration: 0.1s;
+	animation-name: shakeButton;
+}
+
+@keyframes shakeButton {
+	from {
+		transform: rotate(5deg);
+	}
+	to {
+    transform: rotate(-5deg);
+	}
+}
+
 .login {
     font-size: 13px;
     margin: 0;
